@@ -1,0 +1,1 @@
+## Creating mailchimp application
