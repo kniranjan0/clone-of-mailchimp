@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.Box {
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 30em) {
+  .Box {
+    width: 50%;
   }
 }
+@media screen and (min-width: 48em) {
+  .Box {
+    width: 25%;
+  }
+}
+.Heading{
+  
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+.Button{
+  position:"relative";
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepagepart1-img{
+  width: 65%;
+  height: 85%;
+}
+.homepagepart1-text{
+  width: 40%;
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+.homepagepart2-text{
+  width: 40%;
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+
+.homepagepart2-img{
+  width: 40%;
+}
+
+.part3button{
+  margin-top: 15px;
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar{
+  width: 100%;
+  height: 10%;
+}
+@media screen and (min-width: 30em) {
+  .navbar {
+    width: 50%;
+    height: 10%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 48em) {
+  .navbar {
+    width: 25%;
+    height: 10%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.footerText{
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
 }

@@ -1,20 +1,21 @@
 import { Box, Text, Image, Button, Spacer, Flex } from '@chakra-ui/react'
 import { Search2Icon } from "@chakra-ui/icons";
-import { transform } from 'framer-motion';
-
+import "../App.css";
 function Navbar(){
     return (
-      <Box
-        w="100%"
-        h="90px"
+      <Box className='navbar'
+        maxWidth="100%"
+        minW="100%"
+        pb="1rem"
+        pt="1rem"
         backgroundColor={"#ffe01a"}
         position="sticky"
         top={"0"}
         _hover={{ background: "white", transition: "3s" }}
       >
         <Flex justifyContent="space-between">
-          <Box>
-            <Flex gap="3rem" padding={"20px"}>
+          <Box >
+            <Flex gap="3rem" padding={"20px"} >
               <Box>
                 <Text>Products</Text>
               </Box>
