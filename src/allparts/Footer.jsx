@@ -145,7 +145,6 @@ function Footer(){
             <Box w="10rem">
               <Flex direction="column">
                 <Select placeholder="English" size="lg">
-                  <option>English</option>
                   <option>Espanol</option>
                   <option>Francais</option>
                   <option>Portugues</option>

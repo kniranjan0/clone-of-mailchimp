@@ -68,3 +68,10 @@
   margin-top: 0.5rem;
   font-family: "Means Web, Georgia, Times, Times New Roman, serif";
 }
+
+.loginimg{
+  padding:1rem;
+ background-image: url("https://cdn-images.mailchimp.com/billboards/phpza0iJx.jpeg");
+ background-size:cover;
+/* background-color: aqua; */
+}
