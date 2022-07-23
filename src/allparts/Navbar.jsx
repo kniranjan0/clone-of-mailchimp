@@ -1,21 +1,34 @@
-import { Box, Text, Image, Button, Spacer, Flex } from '@chakra-ui/react'
+import { Box, Text, Image, Button, Flex } from '@chakra-ui/react'
 import { Search2Icon } from "@chakra-ui/icons";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 function Navbar(){
+  const navigate = useNavigate();
+  
+  const handleLogin =()=>{
+    navigate('/login');
+  }
+  
+  const handlehome =()=>{
+    navigate('/home');
+  }
+  const handleSignup =()=>{
+    navigate('/signup');
+  }
     return (
-      <Box className='navbar'
-        maxWidth="100%"
+      <Box
+        className="navbar"
+        // maxWidth="100%"
         minW="100%"
-        pb="1rem"
-        pt="1rem"
+        h="auto"
         backgroundColor={"#ffe01a"}
         position="sticky"
         top={"0"}
         _hover={{ background: "white", transition: "3s" }}
       >
         <Flex justifyContent="space-between">
-          <Box >
-            <Flex gap="3rem" padding={"20px"} >
+          <Box>
+            <Flex gap="3rem" padding={"1rem"}>
               <Box>
                 <Text>Products</Text>
               </Box>
@@ -32,28 +45,36 @@ function Navbar(){
           </Box>
           <Box mt="10px">
             <Image
-              borderRadius="30%"
-              w="160px"
+              onClick={handlehome}
+              borderRadius="45%"
+              w="9rem"
               ml="4rem"
+              h="auto"
               src="https://zanet.co.uk/wp-content/uploads/2019/08/mailchimp-yellow-logo.png"
+              pb="0.5rem"
             />
           </Box>
-          <Box ml="5rem" p="10px">
-            <Text>sales:</Text>
-            <Text>+1(800)315-5939</Text>
+          <Box pl="12rem" pt="1.5rem">
+            <Text>sales: +1(800)315-5939</Text>
           </Box>
-          <Box p="12px">
+          <Box p="1rem">
             <Search2Icon
-              mr="-5rem"
+              mr="-12.5rem"
               name="Search2Icon"
               size="32px"
               h={6}
               w={5}
             />
           </Box>
-          <Box p="10px">
-            <Button mr="1rem" >Log In</Button>
-            <Button backgroundColor="#007C89" color="white">
+          <Box pt="1rem" pr="1rem">
+            <Button onClick={handleLogin} mr="1rem">
+              Log In
+            </Button>
+            <Button
+              onClick={handleSignup}
+              backgroundColor="#007C89"
+              color="white"
+            >
               Sign Up Free
             </Button>
           </Box>
