@@ -1,0 +1,81 @@
+.Box {
+  width: 100%;
+}
+@media screen and (min-width: 30em) {
+  .Box {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 48em) {
+  .Box {
+    width: 25%;
+  }
+}
+.Image:hover{
+  transition-duration: 2s;
+  transform:rotate(1080deg);
+  }
+.Heading{
+  
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+.Button{
+  position:"relative";
+}
+
+.homepagepart1-img{
+  width: 65%;
+  height: 85%;
+}
+.homepagepart1-text{
+  width: 40%;
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+.homepagepart2-text{
+  width: 40%;
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+
+.homepagepart2-img{
+  width: 40%;
+}
+
+.part3button{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar{
+  width: 100%;
+  height: 10%;
+}
+@media screen and (min-width: 30em) {
+  .navbar {
+    width: 50%;
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .navbar {
+    width: 25%;
+    height: 10%;
+  }
+}
+
+.footerText{
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-family: "Means Web, Georgia, Times, Times New Roman, serif";
+}
+
+.loginimg{
+  padding:1rem;
+ background-image: url("https://cdn-images.mailchimp.com/billboards/phpza0iJx.jpeg");
+ background-size:cover;
+/* background-color: aqua; */
+}
