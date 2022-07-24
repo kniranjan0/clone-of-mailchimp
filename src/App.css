@@ -11,6 +11,10 @@
     width: 25%;
   }
 }
+.Image:hover{
+  transition-duration: 2s;
+  transform:rotate(1080deg);
+  }
 .Heading{
   
   font-family: "Means Web, Georgia, Times, Times New Roman, serif";

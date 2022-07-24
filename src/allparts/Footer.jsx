@@ -6,7 +6,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import "../App.css"
 function Footer(){
     return (
-      <Box w="100%" backgroundColor="#EFEEEA" pt="2rem">
+      <Box w="100%" backgroundColor="#EFEEEA" pt="2rem" cursor="pointer">
         <Box w="70%" m="auto">
           <Flex justifyContent="space-between">
             <Text fontSize="1rem">Related Links:</Text>

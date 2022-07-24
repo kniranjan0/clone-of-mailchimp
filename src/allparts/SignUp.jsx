@@ -28,6 +28,7 @@ function SignUp() {
     function handleSubmit(){
         data.push(from);
         localStorage.setItem("auth",JSON.stringify(data));
+        alert("Account created successfully")
         navigate("/login")
     }
 

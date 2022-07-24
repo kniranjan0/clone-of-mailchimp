@@ -4,7 +4,10 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 function Navbar(){
   const navigate = useNavigate();
-  
+
+  window.onload = function(){
+    navigate('/home')
+  }  
   const handleLogin =()=>{
     navigate('/login');
   }
@@ -18,8 +21,7 @@ function Navbar(){
     return (
       <Box
         className="navbar"
-        // maxWidth="100%"
-        minW="100%"
+        w="auto"
         h="auto"
         backgroundColor={"#ffe01a"}
         position="sticky"
@@ -29,7 +31,7 @@ function Navbar(){
         <Flex justifyContent="space-between">
           <Box>
             <Flex gap="3rem" padding={"1rem"}>
-              <Box>
+              <Box fontSize="auto">
                 <Text>Products</Text>
               </Box>
               <Box>
@@ -48,7 +50,7 @@ function Navbar(){
               onClick={handlehome}
               borderRadius="45%"
               w="9rem"
-              ml="4rem"
+              ml="7rem"
               h="auto"
               src="https://zanet.co.uk/wp-content/uploads/2019/08/mailchimp-yellow-logo.png"
               pb="0.5rem"
